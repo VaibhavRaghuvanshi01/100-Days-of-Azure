@@ -5,8 +5,8 @@
 
 ### **My Learning Path**
 
-### [Microsoft Certified DevOps Engineer Expert](Microsoft_Certified_DevOps_Engineer_Expert)
-### [Microsoft Certified Solution Architect Expert](Microsoft_Certified_Solution_Architect_Expert)
+### [Microsoft Certified: Azure Developer Associate](Microsoft_Certified_Azure_Developer_Associate)
+
 
 
 
