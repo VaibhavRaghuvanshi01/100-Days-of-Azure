@@ -1,5 +1,5 @@
 # **100-Days-of-Azure**
-<img src="Image/certification.png" width="500">
+<img src="Image/certification.png" width="1000">
 
 ### In this Repository, I am going to mention my Azure Learning.
 

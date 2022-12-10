@@ -1,5 +1,5 @@
-## Target: To prepare and clear AZ-204 Certification Exam and I should be proficient in Azure SDKs, data storage options, data connections, APIs, app authentication and authorization, compute, and container deployment, debugging, performance tuning, and monitoring.
-<img src="Imagedev/certification1.png" width="500">
+## Target: To prepare and clear AZ-204 Certification Exam and for that I should be proficient in Azure SDKs, data storage options, data connections, APIs, app authentication and authorization, compute, and container deployment, debugging, performance tuning, and monitoring.
+<img src="Imagedev/certification1.png" width="1000">
 
 # Day-1:-
 
