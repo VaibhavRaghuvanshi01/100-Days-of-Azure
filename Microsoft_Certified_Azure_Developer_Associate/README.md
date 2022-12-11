@@ -103,7 +103,7 @@ ii. Azure Databricks
 iii. Azure Synapse Analytics
  * It is the new version of Azure SQL Data Warehouse. It includes all of the old data warehouse functionality, but it also supports Spark analytics. 
 
-## Artificial Intelligence
+## Artificial Intelligence 
  
 i. Azure Cognitive Services
  * This is a collection of pre-built artificial intelligence tools. These services let you add AI capabilities to applications even if you don't know anything about machine learning.
