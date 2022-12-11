@@ -74,8 +74,10 @@ i. Azure DevOps
 
 ii. Azure Pipelines
    * It lets you create automated workflows to continuously build, test, and deploy code.
+
 iii. Azure DevTest Labs
    *  It makes you easy to spin up non-production environments. You could do this in other ways, but DevTest Labs gives you some extra capabilities, such as allowing administrators to control costs by setting limits on how many VMs can be deployed at once and ensuring that VMs are shut down when they're not in use.
+   
 iv. Azure Content Delivery Network
    * which lets you take advantage of Microsoft's extensive global network. 
    *  It caches your most frequently accessed content in locations around the world so your end-users will retrieve it from the closest point on the network. This really helps with making your web applications feel more like local applications.
