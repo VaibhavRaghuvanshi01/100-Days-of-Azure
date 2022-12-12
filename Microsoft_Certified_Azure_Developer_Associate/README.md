@@ -149,7 +149,11 @@ iii.  Azure Advisor
  * It will not only suggest ways to improve the performance and availability of your applications, but it will even suggest ways to reduce your costs.
  * Azure Advisor also provides security recommendations. 
 
- 
+ iv. Microsoft Defender for Cloud
+ * It was formerly known as Azure Security Center.
+ * It’s a dashboard that gathers security information from resources across your subscriptions and assesses your vulnerabilities.
+
+
 
 
 
