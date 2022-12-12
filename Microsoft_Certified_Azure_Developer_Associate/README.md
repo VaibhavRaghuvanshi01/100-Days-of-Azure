@@ -156,8 +156,7 @@ iii.  Azure Advisor
 v. Azure Policy
  * It helps you to create your own custom policies from scratch in a service.
 
-v. Azure Policy
- * It helps you to create your own custom policies from scratch in a service.
+
 
 
 
