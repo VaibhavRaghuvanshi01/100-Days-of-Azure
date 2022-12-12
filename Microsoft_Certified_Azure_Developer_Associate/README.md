@@ -156,7 +156,13 @@ iii.  Azure Advisor
 v. Azure Policy
  * It helps you to create your own custom policies from scratch in a service.
 
-
+vi. ARM template
+ *  ARM is short for Azure Resource Manager.
+ * you create an ARM template that specifies all of the configuration details for one or more resources. 
+ 
+vii. Azure Blueprints
+ * A blueprint is a collection of ARM templates plus a few other details, such as policies and user permissions. 
+ * When a blueprint is assigned to a subscription, it not only automates the creation of an environment, but it also keeps a record of the deployment.
 
 
 
