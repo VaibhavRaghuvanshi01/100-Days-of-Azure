@@ -145,7 +145,11 @@ ii. Azure Backup
  * Azure VMs are a little different because you back them up using a service called Azure Backup. 
  * you can even use this service to back up your on-premises systems.
 
+iii.  Azure Advisor
+ * It will not only suggest ways to improve the performance and availability of your applications, but it will even suggest ways to reduce your costs.
+ * Azure Advisor also provides security recommendations. 
 
+ 
 
 
 
