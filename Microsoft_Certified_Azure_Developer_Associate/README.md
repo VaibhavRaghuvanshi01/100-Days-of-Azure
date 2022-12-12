@@ -153,6 +153,11 @@ iii.  Azure Advisor
  * It was formerly known as Azure Security Center.
  * It’s a dashboard that gathers security information from resources across your subscriptions and assesses your vulnerabilities.
 
+v. Azure Policy
+ * It helps you to create your own custom policies from scratch in a service.
+
+v. Azure Policy
+ * It helps you to create your own custom policies from scratch in a service.
 
 
 
