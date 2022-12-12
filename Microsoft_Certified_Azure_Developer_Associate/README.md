@@ -145,24 +145,7 @@ ii. Azure Backup
  * Azure VMs are a little different because you back them up using a service called Azure Backup. 
  * you can even use this service to back up your on-premises systems.
 
-iii.  Azure Advisor
- * It will not only suggest ways to improve the performance and availability of your applications, but it will even suggest ways to reduce your costs.
- * Azure Advisor also provides security recommendations. 
 
-iv. Microsoft Defender for Cloud
- * It was formerly known as Azure Security Center.
- * It’s a dashboard that gathers security information from resources across your subscriptions and assesses your vulnerabilities.
-
-v. Azure Policy
- * It helps you to create your own custom policies from scratch in a service.
-
-vi. ARM template
- *  ARM is short for Azure Resource Manager.
- * you create an ARM template that specifies all of the configuration details for one or more resources. 
- 
-vii. Azure Blueprints
- * A blueprint is a collection of ARM templates plus a few other details, such as policies and user permissions. 
- * When a blueprint is assigned to a subscription, it not only automates the creation of an environment, but it also keeps a record of the deployment. 
 
 
 
