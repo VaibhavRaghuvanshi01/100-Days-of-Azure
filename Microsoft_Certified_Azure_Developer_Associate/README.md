@@ -130,6 +130,44 @@ ii. Azure Event Grid
  * It is use to notify your logic app of particular event.
  * For example, if you want to get an email every time a virtual machine is created in a subscription, then you would configure Event Grid to send a message to your logic app whenever this occurs.
 
+
+## DAY:-3
+
+# Managing Services
+
+i. Azure Monitor 
+ * It's a collection of a variety of monitoring tools. 
+ * the core features of Azure Monitor are metrics and alerts.
+ * Metrics are basically statistics on various aspects of your resources, such as CPU usage on virtual machines and space used on Blob Storage.
+ * It can also watch critical metrics you specify and send you an alert if there's a problem. 
+
+ii. Azure Backup
+ * Azure VMs are a little different because you back them up using a service called Azure Backup. 
+ * you can even use this service to back up your on-premises systems.
+
+iii.  Azure Advisor
+ * It will not only suggest ways to improve the performance and availability of your applications, but it will even suggest ways to reduce your costs.
+ * Azure Advisor also provides security recommendations. 
+
+iv. Microsoft Defender for Cloud
+ * It was formerly known as Azure Security Center.
+ * It’s a dashboard that gathers security information from resources across your subscriptions and assesses your vulnerabilities.
+
+v. Azure Policy
+ * It helps you to create your own custom policies from scratch in a service.
+
+vi. ARM template
+ *  ARM is short for Azure Resource Manager.
+ * you create an ARM template that specifies all of the configuration details for one or more resources. 
+ 
+vii. Azure Blueprints
+ * A blueprint is a collection of ARM templates plus a few other details, such as policies and user permissions. 
+ * When a blueprint is assigned to a subscription, it not only automates the creation of an environment, but it also keeps a record of the deployment. 
+
+
+
+
+
  
 
 
