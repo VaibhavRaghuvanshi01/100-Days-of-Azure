@@ -175,7 +175,7 @@ vii. Azure Blueprints
  * For most of these frameworks, you can choose whether to run it on Windows or Linux although that’s not the case with ASP.NET Framework 4.8, which can only run on Windows.
  * Even if you want to use a different programming language, you can still use App Service if you put your application in a Docker container that has the right dependencies installed in it.
  * high availability
- * scalability so that you can configure it to automatically add more resources to your application when demand increases.
+ * scalability, so that you can configure it to automatically add more resources to your application when demand increases.
  * security ,it also provides authentication capabilities if you only want authorized users to be able to access your apps. 
  * It also lets you control which IP addresses are allowed or denied access to your site if you want.
 
