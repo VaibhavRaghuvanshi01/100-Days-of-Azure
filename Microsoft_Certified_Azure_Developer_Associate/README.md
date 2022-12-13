@@ -165,7 +165,19 @@ vii. Azure Blueprints
  * When a blueprint is assigned to a subscription, it not only automates the creation of an environment, but it also keeps a record of the deployment.
 
 
+## DAY:- 4
 
+# Introduction to Azure App 
+
+ * App Service tries to make deploying a web application as easy as possible while still providing lots of flexibility and features.
+ * It’s considered to be a platform-as-a-service rather than infrastructure-as-a-service because it manages the underlying infrastructure.
+ * App Service supports a wide variety of programming languages and frameworks, including ASP.NET, ASP.NET Core, Java, Ruby, Node.js, PHP, and Python.
+ * For most of these frameworks, you can choose whether to run it on Windows or Linux although that’s not the case with ASP.NET Framework 4.8, which can only run on Windows.
+ * Even if you want to use a different programming language, you can still use App Service if you put your application in a Docker container that has the right dependencies installed in it.
+ * high availability
+ * scalability so that you can configure it to automatically add more resources to your application when demand increases.
+ * security ,it also provides authentication capabilities if you only want authorized users to be able to access your apps. 
+ * It also lets you control which IP addresses are allowed or denied access to your site if you want.
 
 
 
