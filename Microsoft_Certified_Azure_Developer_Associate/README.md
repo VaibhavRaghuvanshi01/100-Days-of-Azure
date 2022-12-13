@@ -167,7 +167,7 @@ vii. Azure Blueprints
 
 ## DAY:- 4
 
-# Introduction to Azure App 
+# Introduction to Azure App Services
 
  * App Service tries to make deploying a web application as easy as possible while still providing lots of flexibility and features.
  * It’s considered to be a platform-as-a-service rather than infrastructure-as-a-service because it manages the underlying infrastructure.
