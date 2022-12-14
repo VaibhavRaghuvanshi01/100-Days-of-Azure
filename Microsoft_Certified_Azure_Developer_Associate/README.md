@@ -180,8 +180,13 @@ vii. Azure Blueprints
  * It also lets you control which IP addresses are allowed or denied access to your site if you want.
 
 
+## DAY:- 5
 
- 
+# Creating a Simple Web App
+
+ * There are a few different options for where we could deploy it from,We could use Visual Studio, Visual Studio Code, or the Azure Command-Line Interface. I’m going to use the Azure CLI because it’s possible to use it without having to install anything. Microsoft provides something called the Cloud Shell that brings up a small virtual machine that has the Azure CLI and other tools installed on it.
+ * Before we can deploy an app, we need to get one from somewhere, I’m going to use a sample .NET application.
+ command-dotnet new webapp -n MyFirstAzureWebApp -f net6.0 && cd MyFirstAzureWebApp.
 
 
 
