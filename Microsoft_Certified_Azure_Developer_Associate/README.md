@@ -187,6 +187,14 @@ vii. Azure Blueprints
  * There are a few different options for where we could deploy it from,We could use Visual Studio, Visual Studio Code, or the Azure Command-Line Interface. I’m going to use the Azure CLI because it’s possible to use it without having to install anything. Microsoft provides something called the Cloud Shell that brings up a small virtual machine that has the Azure CLI and other tools installed on it.
  * Before we can deploy an app, we need to get one from somewhere, I’m going to use a sample .NET application.
  command-dotnet new webapp -n MyFirstAzureWebApp -f net6.0 && cd MyFirstAzureWebApp.
+ * we can deploy it to App Service using this command.[az webapp up --sku F1 --name <app-name>],“az” means it’s an Azure command, “webapp” is the command for App Service,“up” tells it to create the web app using the code in the current directory, “sku F1” means that we want to use the free tier so we won’t be charged for this service, “--name”what we want to call the app and name has to be unique among all of the App Service names across all Azure customer.
+ * There are quite a few other options we can add,Some of the other most common options are:
+   * --resource-group for the resource group that it will put your App Service instance in.
+   * --location to specify the Azure region where your app will be hosted.
+   * --plan to specify which App Service Plan to use.
+   * -os-type, which can be either Windows or Linux. If you don’t specify one, then it’ll default to “Windows”.
+
+ * Now, suppose we wanted to make a change to the app.Go to editor,go into the MyFirstAzureWebApp folder, and then go into the Pages folder, which is where we’ll find the home page for our app. It’s called Index.cshtml,there we can customize the main text on the home page. To update our app, we’ll use the “az webapp up” command again, but this time, we don’t need to specify the sku or the name.
 
 
 
