@@ -197,5 +197,30 @@ vii. Azure Blueprints
  * Now, suppose we wanted to make a change to the app.Go to editor,go into the MyFirstAzureWebApp folder, and then go into the Pages folder, which is where we’ll find the home page for our app. It’s called Index.cshtml,there we can customize the main text on the home page. To update our app, we’ll use the “az webapp up” command again, but this time, we don’t need to specify the sku or the name.
 
 
+## DAY:- 6
 
-  
+# App Service Plans
+
+ * The three main settings you have to choose in an App Service Plan are:
+   * operating system
+   * region
+   * pricing tier
+ *  operating system can be either Windows or Linux.
+ *  For the region, you typically choose the one that’s closest to where most of your users are located,Bear in mind that you can’t change a service plan’s region.So if you decide to move an app to another region later, you’ll have to make a copy of it and put it in a new App Service Plan.
+ * types of pricing tier :-
+   * Free tier
+   * Shared tier
+   * Basic tier
+   * Standard tier
+   * Premium tier
+   * Isolated tier
+
+ * The Free tier is a good choice as long as you only need 60 CPU minutes per day. If you need more CPU time than that, then you’ll have to go with a plan that costs money.
+ * Shared tier, which is also known as the D1 tier. It gives you up to 240 CPU minutes per day. It’s called the Shared tier because you have to share compute resources with other Azure customers. That’s the case with the Free tier as well. Both of these tiers have just one gig of RAM and one gig of storage, so you can’t do too much with them. The Shared tier also allows you to use a custom domain name for your app’s website, which isn’t something you can do with the Free tier.
+ * Basic tier, which puts your apps on dedicated virtual machines instead of shared VMs. There are several options that vary based on the number of virtual CPU cores and the amount of memory. All of the options come with 10 gig of storage.
+ * Standard tier,  it has 50 gig of storage instead of 10 gig, the CPU and memory options are exactly the same as the Basic tier. The big difference is that the Standard tier supports autoscaling, which means it can automatically add more virtual machines to handle increased traffic. It lets you use up to 10 VM instances. That’s significantly more than the Basic tier, which has a maximum of 3 VM instances.
+ * The Premium tier has options for more CPU, memory, and storage, and it lets you use up to 30 VM instances in most Azure regions.
+ * The Isolated tier gives you a private, dedicated environment that’s in its own virtual network. While the Standard and Premium tiers allow you to connect your dedicated VMs to a virtual network, the Isolated tier actually puts your VMs in a private virtual network so they’re isolated from other App Service instances. It lets you have up to 100 VM instances.
+ * It’s possible to put multiple apps in your service plan, But all of those apps will share the same compute resources, so if you put too many apps in the same service plan, then you’ll run into performance issues.
+ * One way to resolve this problem would be to add more virtual machine instances up to the limit of the number of instances allowed in the pricing tier you’ve chosen. This is known as scaling out.
+ * second way you can switch your plan to a pricing tier that has more powerful instances and/or a higher limit on the number of instances you can have. This is called scaling up.
