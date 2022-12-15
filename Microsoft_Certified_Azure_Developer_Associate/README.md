@@ -207,7 +207,7 @@ vii. Azure Blueprints
    * pricing tier
  *  operating system can be either Windows or Linux.
  *  For the region, you typically choose the one that’s closest to where most of your users are located,Bear in mind that you can’t change a service plan’s region.So if you decide to move an app to another region later, you’ll have to make a copy of it and put it in a new App Service Plan.
- * types of pricing tier :-
+ * Types of pricing tier :-
    * Free tier
    * Shared tier
    * Basic tier
