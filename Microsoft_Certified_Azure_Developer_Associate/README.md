@@ -224,3 +224,13 @@ vii. Azure Blueprints
  * It’s possible to put multiple apps in your service plan, But all of those apps will share the same compute resources, so if you put too many apps in the same service plan, then you’ll run into performance issues.
  * One way to resolve this problem would be to add more virtual machine instances up to the limit of the number of instances allowed in the pricing tier you’ve chosen. This is known as scaling out.
  * second way you can switch your plan to a pricing tier that has more powerful instances and/or a higher limit on the number of instances you can have. This is called scaling up.
+
+
+## DAY:- 7
+
+# Autoscaling on Azure App Service
+
+* If you need to add more resources to an app running on App Service, one way is to scale up its resources by switching its App Service Plan to a higher pricing tier. This is very easy to do, and it only takes a few seconds, but it’s not a very dynamic solution.
+
+* Adding more virtual machines when your app is busier and remove VMs when it’s less busy. This is known as scaling out and scaling in rather than scaling up and scaling down. It’s only available on Basic plans and higher. It’s not available on Free or Shared plans.
+
