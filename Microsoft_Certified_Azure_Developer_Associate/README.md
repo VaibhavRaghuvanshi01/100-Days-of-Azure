@@ -236,6 +236,6 @@ vii. Azure Blueprints
  * The service that actually handles autoscaling is Azure Monitor. You can get to the autoscale settings either by selecting “Scale out” from the menu in your Service Plan or by going to Azure Monitor and selecting “Autoscale” and then selecting your Service Plan.
  * you can create one or more scale conditions that specify exactly what will trigger Azure to add or remove virtual machines. In each scale condition, you need to add one or more rules. 
  * cool down period-This is the number of minutes to wait after a scaling operation before it can scale again. By default, it’s set to 5 minutes. This gives the metrics a chance to stabilize again after the scaling operation.
- *
+ 
 
 
