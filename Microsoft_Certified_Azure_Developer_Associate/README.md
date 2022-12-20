@@ -231,6 +231,11 @@ vii. Azure Blueprints
 # Autoscaling on Azure App Service
 
  * If you need to add more resources to an app running on App Service, one way is to scale up its resources by switching its App Service Plan to a higher pricing tier. This is very easy to do, and it only takes a few seconds, but it’s not a very dynamic solution.
-
  * Adding more virtual machines when your app is busier and remove VMs when it’s less busy. This is known as scaling out and scaling in rather than scaling up and scaling down. It’s only available on Basic plans and higher. It’s not available on Free or Shared plans.
+ * Basic tier probably won’t give you what you need. That’s because it only allows you to scale in and out manually. If you want Azure to scale without manual intervention, then you need autoscaling, which is only available on Standard plans and higher.
+ * The service that actually handles autoscaling is Azure Monitor. You can get to the autoscale settings either by selecting “Scale out” from the menu in your Service Plan or by going to Azure Monitor and selecting “Autoscale” and then selecting your Service Plan.
+ * you can create one or more scale conditions that specify exactly what will trigger Azure to add or remove virtual machines. In each scale condition, you need to add one or more rules. 
+ * cool down period-This is the number of minutes to wait after a scaling operation before it can scale again. By default, it’s set to 5 minutes. This gives the metrics a chance to stabilize again after the scaling operation.
+ *
+
 
