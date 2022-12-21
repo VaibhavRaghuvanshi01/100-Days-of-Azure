@@ -238,4 +238,26 @@ vii. Azure Blueprints
  * cool down period-This is the number of minutes to wait after a scaling operation before it can scale again. By default, it’s set to 5 minutes. This gives the metrics a chance to stabilize again after the scaling operation.
 
 
+## DAY:-8
+
+# Deployment Slots in Azure App Service
+
+ * deployment slot:- a testing environment that’s as close as possible to your production environment.
+ *  By default, an app has one deployment slot called “Production”.
+ * But you can create other deployment slots, too  like “testing” and “staging”. Then when you deploy an app, you can choose which deployment slot to put it in.
+ * STEPS:-
+   * you clone your production slot to a staging slot.When you do this, you can choose to clone the production slot’s configuration, including app settings, connection strings, the language framework, and many other settings. 
+   * That way your staging slot’s configuration will be as close as possible to your production slot’s configuration, which will make your testing more valid.
+   * Once you’ve cloned the slot to a new one, though, you can change any of those settings in the new slot if you need to. 
+ * Note that if you use the command line to upload the app to the staging slot, you can’t use the “az webapp up” command. Instead, you have to use the “az webapp deployment source” command.
+ * next step is to swap the staging slot with the production slot. You start by setting the source slot and the target slot.
+ * The source slot contains the new version of the app, so it’s the staging slot.
+ * The target slot is the one that will be running the new version once the swap has been completed, so it’s the production slot.
+ * After the swap the source and target slots, it swaps not only the two different versions of your app but also any settings that you changed in the staging slot, such as the language framework if you changed that.
+ * Aside from giving you the ability to properly test a new version before putting it into production, there are a couple of other big advantages to using a swap to deploy an app.
+ *  First, when you deploy a new version of an app, it will often cause a reboot of the virtual machines that are used to host the app. During the warm-up period when the VM instances are spinning up, the app is not available, so if you were to simply deploy the new version of the app to production, it would cause downtime. But if you deploy to a staging slot first, then the VM instances have a chance to warm up before you swap the slot with production.
+ * Second, if there’s a problem after you swap the new version into production, you can easily roll back and revert to the previous version. All you have to do is swap the two slots again. If you’ve ever had to quickly roll back a new version that you’ve deployed, then I’m sure you can appreciate how helpful this feature is.
+ * swap with preview”:- This does the swap in two phases. First, it temporarily copies the slot-specific settings from the target slot (that is, the production slot) to the source slot (that is, the staging slot). It then gives you a chance to test the new version of the app with all of the settings it will have after the swap is completed.
+ * If it doesn’t work, then you can cancel the swap. If it does work, then you can tell it to complete the swap. At that point, it swaps the app and the other settings between the two slots. But it leaves the slot-specific settings with each slot. So the version of the app that was previously in production and is now in the staging slot has the connection string for the test database.
+
 
