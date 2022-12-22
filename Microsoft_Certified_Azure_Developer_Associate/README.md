@@ -280,6 +280,22 @@ vii. Azure Blueprints
  * Click on Change size under Pricing tier and, in the blade that appears, click See additional options to reveal the different tiers and their respective features.
  * Select the S1 tier and click Apply.
  * Click Review + Create and then Create to create the App Service plan.
+
+ iii. Creating a Web App in Azure
+ *  In the search bar at the top of the Azure Portal, enter app services. Click App Services under Services.
+ *  Click + Create to create a new App Service.
+ * In the Web App form, enter the following values and accept the defaults for the rest.
+ * Move onto the Monitoring section and enter the following values:
+    * Application Insights: No (this can be enabled after creation)
+ * Click Review + create and then Create.
+ *  Once the Web App is created, click Go to resource to view its Overview blade,there you can Observe the information available in the Overview blade.
+
+ * 
+
+
+
+
+
    
 
 
