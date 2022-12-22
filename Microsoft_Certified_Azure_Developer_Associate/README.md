@@ -302,7 +302,7 @@ vii. Azure Blueprints
  * Click on Browse in the command bar to open the default application deployed in the staging slot.
  
  v. Deploying a Web App Using Deployment Slots
- 
+
  *  Download the pre-built application zip file that you will deploy to the staging slot.
  * From the staging slot's App Service blade, enter advanced tools in the search bar and select Advanced Tools under Development Tools.
  * In the blade that appears, click Go to open the Advanced Tools interface.
@@ -326,6 +326,45 @@ vii. Azure Blueprints
  * Click on Start swap for starting the swap operation.
  * Click Complete swap to finish the swap after approving the preview.
  *  Close the staging blade and Browse to the production slot's Web App to confirm the swap completed.
+
+ vi. Monitoring Azure Web Apps
+  *  On the Overview blade of the production Web App, click on one of the charts to open a Metrics blade.
+  * Click the x beside the currently plotted metric to remove it from the chart.
+ * Click Add metric and select Connections from the Metric drop-down menu.
+ * Click the checkmark to confirm your metric selection.
+ * Repeat the previous procedure to add the following metrics to demonstrate multi-metric charting:
+
+    * HTTP 2xx
+    * HTTP Server Errors
+    * Thread Count 
+ * Close the Metrics blade.
+ * Scroll down the sidebar menu and select Monitoring > App Service Logs.
+ * Set the following values:
+
+    * Application Logging (Filesystem): On
+    * Level: Verbose
+    * Web server logging: File System 
+    * Quota (MB): 35
+    * Retention Period (Days): 0 
+ * Click Save.
+ * Click Log stream under Monitoring in the sidebar to view the application and web server logs in near real-time from the Portal.
+ *  Refresh the production Web App browser tab to generate some logging activity.
+ *  Wait up to a minute for the verbose application logs to appear in the streaming log console.
+ * Click Web server logs in the Log stream blade to switch to view web server logs.
+ * Refresh the production Web App browser tab, and wait up to a minute for the web server logs to appear in the streaming log console.
+ * Scroll down to the Support + Troubleshooting section of the sidebar menu, and click Resource health.
+
+
+
+ 
+ 
+
+
+
+
+
+
+
 
 
 
