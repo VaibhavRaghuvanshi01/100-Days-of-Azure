@@ -261,3 +261,25 @@ vii. Azure Blueprints
  * If it doesn’t work, then you can cancel the swap. If it does work, then you can tell it to complete the swap. At that point, it swaps the app and the other settings between the two slots. But it leaves the slot-specific settings with each slot. So the version of the app that was previously in production and is now in the staging slot has the connection string for the test database.
 
 
+## DAY:-9
+
+# Deploying And Monitoring Azure App Service Web Apps
+
+ i. Logging in to the Microsoft Azure Portal
+
+ ii. Creating an Azure App Service Plan
+   * In the search bar at the top of the Azure Portal, enter app service plans. Click App Service plans under Services.
+
+   * Click + Create to create a new App Service plan.
+
+   * In the Create App Service Plan form, enter the following values and accept the defaults for the rest:
+     * Resource Group
+     * Name
+     * Operating System
+     * Location
+ * Click on Change size under Pricing tier and, in the blade that appears, click See additional options to reveal the different tiers and their respective features.
+ * Select the S1 tier and click Apply.
+ * Click Review + Create and then Create to create the App Service plan.
+   
+
+
