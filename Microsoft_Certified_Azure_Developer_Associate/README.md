@@ -300,6 +300,42 @@ vii. Azure Blueprints
  *  Click Close on the Add a slot blade.
  *  Click on the staging slot.
  * Click on Browse in the command bar to open the default application deployed in the staging slot.
+ 
+ v. Deploying a Web App Using Deployment Slots
+ 
+ *  Download the pre-built application zip file that you will deploy to the staging slot.
+ * From the staging slot's App Service blade, enter advanced tools in the search bar and select Advanced Tools under Development Tools.
+ * In the blade that appears, click Go to open the Advanced Tools interface.
+ * From the Kudu toolbar, click Tools > Zip Push Deploy.
+ * Drag and drop the zip file onto the directory contents table to kick off a Zip deploy.
+ * Close the Kudu browser tab.
+ * Click Browse on the staging slot's Overview blade to navigate to the Web App.
+ * Open the staging slot's Configuration blade.
+ * Under the Application settings section, click + New application setting and enter the following values before clicking OK.
+    * Name: test-setting
+    * Value: blue
+    * Deployment Slot Setting: Checked
+ *  Click Save at the top of the blade followed by Continue to save the app setting.
+ *  Refresh the staging slot Web App's homepage to see the change reflected.
+ *  From the Deployment blade, click Deployment Slots > Swap.
+ * In the Swap form, enter the following values:
+
+    * Source
+    * Destination
+    * Perform swap with preview: checked
+ * Click on Start swap for starting the swap operation.
+ * Click Complete swap to finish the swap after approving the preview.
+ *  Close the staging blade and Browse to the production slot's Web App to confirm the swap completed.
+
+
+
+
+
+
+
+
+
+ 
 
 
 
