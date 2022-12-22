@@ -290,7 +290,21 @@ vii. Azure Blueprints
  * Click Review + create and then Create.
  *  Once the Web App is created, click Go to resource to view its Overview blade,there you can Observe the information available in the Overview blade.
 
- * 
+ iv. Creating a Staging Deployment Slot
+ * In the App Service blade, click Deployment slots under the Deployment section,The production deployment slot is available by default.
+ * Click + Add Slot.
+ * Enter the following values in the Add a slot form:
+    * Name: staging 
+    * Clone settings from: Do not clone settings
+ *  Click Add to create the slot.
+ *  Click Close on the Add a slot blade.
+ *  Click on the staging slot.
+ * Click on Browse in the command bar to open the default application deployed in the staging slot.
+
+
+
+
+
 
 
 
