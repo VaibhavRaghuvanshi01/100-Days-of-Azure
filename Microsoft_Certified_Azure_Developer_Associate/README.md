@@ -354,6 +354,39 @@ vii. Azure Blueprints
  * Refresh the production Web App browser tab, and wait up to a minute for the web server logs to appear in the streaming log console.
  * Scroll down to the Support + Troubleshooting section of the sidebar menu, and click Resource health.
 
+ vii. Monitoring Application Performance With Application Insights
+ * In the search bar at the top of the Azure Portal, enter app insight. Click Application Insights under Services.
+ *  Click + Create to create a new Application Insight resource.
+ *  In the Application Insights form, enter the following values and accept the defaults for the rest:
+
+    * Resource Group
+    * Name
+    * Region
+    * Resource Mode
+ *  Click Review + create and then Create.
+ * Once complete, return to the production Web App and on the app blade's sidebar menu, click on Application Insights under the Settings section.
+ * Click Turn on Application Insights and in the Application Insights form, under Link to an Application Insights resource, click the Select existing resource button.
+ * Select the app insight resource created earlier with a name similar.
+ *  Click Apply and click Yes.
+ * Click on the View Application Insights Data link.
+ * Refresh the production Web App's browser tab, and click on a few of the different links in the header to generate some request data.
+ * Click on Search in the command bar located above of the Essentials drop-down.
+ *  Enter home in the search bar.
+ * Go back to the Overview page and click on Logs in the menu bar,Log Analytics allows you to run SQL-like queries over the information tracked by Application Insights.
+ * Close the internal welcome window first and then close the example query welcome page.
+ * Double-click pageViews to generate a query for all page views.
+ * Click RUN to execute the query.
+ * Click Chart to see a chart view of results.
+ *  Click Chart formatting on the right side of the chart and make the following changes in the drop-down menus to show the total page views for each page:
+
+    * Change the x-axis from timestamp to name
+    * Change the y-axis from duration to itemCount
+    * Change the split by from id to url
+ * In the sidebar menu, click on Performance under the Investigate section to see performance monitoring data.
+ *  Close the Application Insights blade.
+
+
+
 
 
  
