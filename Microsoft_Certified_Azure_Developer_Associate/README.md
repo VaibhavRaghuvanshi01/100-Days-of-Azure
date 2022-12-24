@@ -385,6 +385,18 @@ vii. Azure Blueprints
  * In the sidebar menu, click on Performance under the Investigate section to see performance monitoring data.
  *  Close the Application Insights blade.
 
+ ## DAY:- 10
+
+ # Deploying Code From GitHub to Azure App Service
+
+  By using the  Azure Cloud Shell-
+  * For creating a resource group we have to use  the “az group create” command. Add the name parameter  for “webapp resource group”. Then add the location parameter and specify an Azure region.
+  * now we need to create an App Service plan using the “az appservice plan create” command.Add the name parameter ,the resources group.For the location, we’ll use the same region as we did for the resource group and then we have to specify the SKU, which means the pricing tier for the App Service Plan. F1 is the free tier, so we won’t have to pay anything.
+ * Now we need to create a webapp in the plan. This will essentially be a place to put our app when the time comes, so when we first create the webapp, it’ll be empty.Use the “az webapp create” command. The name has to be globally unique.Then tell it to use the resource group and the App Service plan we just created, which we called asplan.
+ * we need to deploy the app, the command we need is “az webapp deployment source config”., we can use the “repo-url” parameter to tell it where the GitHub repository is. This is the URL for the “html-docs-hello-world” sample app.
+ * we need to specify the “manual-integration” parameter. This means that we’re deploying the code manually rather than telling it to automatically deploy the app every time the code changes.
+ * Then the name of the webapp where we want to deploy the code and  which resource group the webapp is in.
+ * If you want to configure continuous deployment, which is where the app automatically gets deployed every time the code in the repository changes, then Microsoft recommends using the Azure Portal.
 
 
 
