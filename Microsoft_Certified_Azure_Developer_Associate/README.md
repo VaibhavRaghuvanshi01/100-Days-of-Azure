@@ -215,8 +215,18 @@ vii. Azure Blueprints
    * Premium tier
    * Isolated tier
 
- * The Free tier is a good choice as long as you only need 60 CPU minutes per day. If you need more CPU time than that, then you’ll have to go with a plan that costs money.
- * Shared tier, which is also known as the D1 tier. It gives you up to 240 CPU minutes per day. It’s called the Shared tier because you have to share compute resources with other Azure customers. That’s the case with the Free tier as well. Both of these tiers have just one gig of RAM and one gig of storage, so you can’t do too much with them. The Shared tier also allows you to use a custom domain name for your app’s website, which isn’t something you can do with the Free tier.
+ * The Free tier is a good choice as long as you only need 60 
+  CPU minutes per day. If you need more CPU time than that, 
+   then you’ll have to go with a plan that costs money.
+ * Shared tier, which is also known as the D1 tier. It gives 
+  you up to 240 CPU minutes per day. It’s called the Shared 
+   tier because you have to share compute resources with 
+    other Azure customers. That’s the case with the Free tier 
+     as well. Both of these tiers have just one gig of RAM 
+    and one gig of storage, so you can’t do too much with 
+    them. The Shared tier also allows you to use a custom 
+    domain name for your app’s website, which isn’t 
+    something you can do with the Free tier.
  * Basic tier, which puts your apps on dedicated virtual machines instead of shared VMs. There are several options that vary based on the number of virtual CPU cores and the amount of memory. All of the options come with 10 gig of storage.
  * Standard tier,  it has 50 gig of storage instead of 10 gig, the CPU and memory options are exactly the same as the Basic tier. The big difference is that the Standard tier supports autoscaling, which means it can automatically add more virtual machines to handle increased traffic. It lets you use up to 10 VM instances. That’s significantly more than the Basic tier, which has a maximum of 3 VM instances.
  * The Premium tier has options for more CPU, memory, and storage, and it lets you use up to 30 VM instances in most Azure regions.
@@ -268,30 +278,44 @@ vii. Azure Blueprints
  i. Logging in to the Microsoft Azure Portal
 
  ii. Creating an Azure App Service Plan
-   * In the search bar at the top of the Azure Portal, enter app service plans. Click App Service plans under Services.
+   * In the search bar at the top of the Azure Portal, enter 
+    app service plans. Click App Service plans under 
+     Services.
 
    * Click + Create to create a new App Service plan.
 
-   * In the Create App Service Plan form, enter the following values and accept the defaults for the rest:
+   * In the Create App Service Plan form, enter the following 
+    values and accept the defaults for the rest:
      * Resource Group
      * Name
      * Operating System
      * Location
- * Click on Change size under Pricing tier and, in the blade that appears, click See additional options to reveal the different tiers and their respective features.
+ * Click on Change size under Pricing tier and, in the blade 
+  that appears, click See additional options to reveal the 
+  different tiers and their respective features.
  * Select the S1 tier and click Apply.
- * Click Review + Create and then Create to create the App Service plan.
+ * Click Review + Create and then Create to create the App 
+  Service plan.
 
  iii. Creating a Web App in Azure
- *  In the search bar at the top of the Azure Portal, enter app services. Click App Services under Services.
+ *  In the search bar at the top of the Azure Portal, enter 
+  app services. Click App Services under Services.
  *  Click + Create to create a new App Service.
- * In the Web App form, enter the following values and accept the defaults for the rest.
- * Move onto the Monitoring section and enter the following values:
-    * Application Insights: No (this can be enabled after creation)
+ * In the Web App form, enter the following values and accept 
+  the defaults for the rest.
+ * Move onto the Monitoring section and enter the following 
+  values:
+    * Application Insights: No (this can be enabled after 
+     creation)
  * Click Review + create and then Create.
- *  Once the Web App is created, click Go to resource to view its Overview blade,there you can Observe the information available in the Overview blade.
+ * Once the Web App is created, click Go to resource to view 
+  its Overview blade,there you can Observe the information 
+  available in the Overview blade.
 
  iv. Creating a Staging Deployment Slot
- * In the App Service blade, click Deployment slots under the Deployment section,The production deployment slot is available by default.
+ * In the App Service blade, click Deployment slots under the 
+   Deployment section,The production deployment slot is 
+   available by default.
  * Click + Add Slot.
  * Enter the following values in the Add a slot form:
     * Name: staging 
@@ -299,19 +323,28 @@ vii. Azure Blueprints
  *  Click Add to create the slot.
  *  Click Close on the Add a slot blade.
  *  Click on the staging slot.
- * Click on Browse in the command bar to open the default application deployed in the staging slot.
+ *  Click on Browse in the command bar to open the default 
+    application deployed in the staging slot.
  
  v. Deploying a Web App Using Deployment Slots
 
- *  Download the pre-built application zip file that you will deploy to the staging slot.
- * From the staging slot's App Service blade, enter advanced tools in the search bar and select Advanced Tools under Development Tools.
- * In the blade that appears, click Go to open the Advanced Tools interface.
+ *  Download the pre-built application zip file that you will 
+   deploy to the staging slot.
+ * From the staging slot's App Service blade, enter advanced 
+   tools in the search bar and select Advanced Tools under 
+   Development Tools.
+ * In the blade that appears, click Go to open the Advanced 
+  Tools interface.
  * From the Kudu toolbar, click Tools > Zip Push Deploy.
- * Drag and drop the zip file onto the directory contents table to kick off a Zip deploy.
+ * Drag and drop the zip file onto the directory contents 
+  table to kick off a Zip deploy.
  * Close the Kudu browser tab.
- * Click Browse on the staging slot's Overview blade to navigate to the Web App.
+ * Click Browse on the staging slot's Overview blade to 
+  navigate to the Web App.
  * Open the staging slot's Configuration blade.
- * Under the Application settings section, click + New application setting and enter the following values before clicking OK.
+ * Under the Application settings section, click + New 
+  application setting and enter the following values before 
+   clicking OK.
     * Name: test-setting
     * Value: blue
     * Deployment Slot Setting: Checked
@@ -390,13 +423,68 @@ vii. Azure Blueprints
  # Deploying Code From GitHub to Azure App Service
 
   By using the  Azure Cloud Shell-
-  * For creating a resource group we have to use  the “az group create” command. Add the name parameter  for “webapp resource group”. Then add the location parameter and specify an Azure region.
-  * now we need to create an App Service plan using the “az appservice plan create” command.Add the name parameter ,the resources group.For the location, we’ll use the same region as we did for the resource group and then we have to specify the SKU, which means the pricing tier for the App Service Plan. F1 is the free tier, so we won’t have to pay anything.
- * Now we need to create a webapp in the plan. This will essentially be a place to put our app when the time comes, so when we first create the webapp, it’ll be empty.Use the “az webapp create” command. The name has to be globally unique.Then tell it to use the resource group and the App Service plan we just created, which we called asplan.
- * we need to deploy the app, the command we need is “az webapp deployment source config”., we can use the “repo-url” parameter to tell it where the GitHub repository is. This is the URL for the “html-docs-hello-world” sample app.
- * we need to specify the “manual-integration” parameter. This means that we’re deploying the code manually rather than telling it to automatically deploy the app every time the code changes.
- * Then the name of the webapp where we want to deploy the code and  which resource group the webapp is in.
- * If you want to configure continuous deployment, which is where the app automatically gets deployed every time the code in the repository changes, then Microsoft recommends using the Azure Portal.
+  * For creating a resource group we have to use  the “az 
+   group create” command. Add the name parameter  for “webapp 
+   resource group”. Then add the location parameter and 
+   specify an Azure region.
+  * now we need to create an App Service plan using the “az 
+   appservice plan create” command.Add the name parameter 
+   ,the resources group.For the location, we’ll use the same 
+   region as we did for the resource group and then we have 
+   to specify the SKU, which means the pricing tier for the 
+   App Service Plan. F1 is the free tier, so we won’t have to 
+   pay anything.
+ * Now we need to create a webapp in the plan. This will 
+  essentially be a place to put our app when the time comes, 
+  so when we first create the webapp, it’ll be empty.Use the 
+   “az webapp create” command. The name has to be globally 
+   unique.Then tell it to use the resource group and the App 
+   Service plan we just created, which we called asplan.
+ * we need to deploy the app, the command we need is “az 
+  webapp deployment source config”., we can use the “repo- 
+ url” parameter to tell it where the GitHub repository is. 
+ This is the URL for the “html-docs-hello-world” sample app.
+ * we need to specify the “manual-integration” parameter.This 
+  means that we’re deploying the code manually rather than 
+ telling it to automatically deploy the app every time the 
+  code changes.
+ * Then the name of the webapp where we want to deploy the 
+  code and  which resource group the webapp is in.
+ * If you want to configure continuous deployment, which is 
+  where the app automatically gets deployed every time the 
+  code in the repository changes, then Microsoft recommends 
+   using the Azure Portal.
+
+ ## DAY:-11
+
+ # Configuring Networking in Azure App Service 
+
+ * Introduction
+    * creating custom domain name for  an app
+    * Enabling TLS/SSL 
+      * so we can reached with HTTPS
+    * Inbound and Outbound Connections
+
+* Custom Domains 
+     * you need to make sure your App Service Plan is using a paid tier because custom domains are not supported in 
+      the free F1 tier. 
+     *  go into the Custom Domain settings for your app in App Service and find the Custom Domain Verification ID. This is something that you’ll add to your domain records to prove to Microsoft that you own the domain.
+     *  Copy the verification ID and paste it into a text 
+     editor. 
+     * You’ll also need to copy the IP address of your app and the existing URL of the app from the Custom Domains page. The existing URL will end in 
+     “.azurewebsites.net”. Paste both of these values into 
+     a text editor as well.
+     * Now go to your domain provider’s website and open your DNS records .If you’re going to use a root domain, for your app, then create an A record. 
+     * In the A record, set the name to ‘@’ (which means the 
+      root domain), and set the value to the IP address of 
+      your app. In the CNAME record, set the name to the 
+      subdomain, such as www, and set the value to the 
+      existing URL of your app.
+     * Now to prove to Microsoft that you own this domain and its subdomain, you need to create a TXT record for each of them. A TXT record is just an informational record that doesn’t affect the resolution of your domain name.
+     *  For the root domain, set the name to asuid, which I’m assuming stands for “App Service Unique Identifier”, and set the value to the Custom Domain Verification ID that you copied from App Service. For the subdomain, set the name to asuid dot and the subdomain,And set the value to the Custom Domain Verification ID.
+     * Now you need to go back to the Custom Domains page for your App Service app and add your custom domain.You just need to put in the name of the domain and the DNS record type, which will be either A or CNAME, depending on whether you’re adding the root domain or a subdomain. 
+     * Then you click the “Validate” button, and Azure checks for the DNS records that you added. If it works, then your app is now accessible using your custom domain name.
+
 
 
 
