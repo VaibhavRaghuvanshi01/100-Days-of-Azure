@@ -485,6 +485,21 @@ vii. Azure Blueprints
      * Now you need to go back to the Custom Domains page for your App Service app and add your custom domain.You just need to put in the name of the domain and the DNS record type, which will be either A or CNAME, depending on whether you’re adding the root domain or a subdomain. 
      * Then you click the “Validate” button, and Azure checks for the DNS records that you added. If it works, then your app is now accessible using your custom domain name.
 
+  
+ ## DAY:-12
+
+ # Enabling TLS/SSL
+ * after creating custom domain for your app, it will only be accessible at a URL starting with “http”, which is an insecure protocol.These days, every website should be able to respond to requests over HTTPS, which is the secure version of HTTP.To set that up, we need to enable TLS/SSL
+ * we need to make sure that the tier of your App Service Plan is at least Basic because the Free and Shared tiers don’t support TLS/SSL for custom domains.
+ * we need to have a TLS/SSL certificate file. This type of file contains a private key and a certificate with a public key. These are needed for a couple of reasons. 
+    * First, the public/private key pair is used to encrypt and decrypt traffic between the website and the browser of anyone visiting the site.
+    * Second,The certificate verifies that the browser is interacting directly with the website,it helps prevent something called a man-in-the-middle attack.
+    * Third,you need to create a TLS binding to your custom domain.
+ * how to get get a certificate file- The easiest way is to use the free App Service managed certificate. It’s provided by Digicert, which is the certificate authority that verifies the authenticity of the certificate. This solution won’t work in all cases, but it works for most situations, and it’s free.
+ * 
+
+
+   
 
 
 
