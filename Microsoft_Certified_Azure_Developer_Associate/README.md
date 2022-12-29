@@ -496,7 +496,12 @@ vii. Azure Blueprints
     * Second,The certificate verifies that the browser is interacting directly with the website,it helps prevent something called a man-in-the-middle attack.
     * Third,you need to create a TLS binding to your custom domain.
  * how to get get a certificate file- The easiest way is to use the free App Service managed certificate. It’s provided by Digicert, which is the certificate authority that verifies the authenticity of the certificate. This solution won’t work in all cases, but it works for most situations, and it’s free.
- * 
+ * To create a free certificate, go into the TLS/SSL settings for your App Service app, then select Private Key Certificates, and click Create App Service Managed Certificate. Then tell it which custom domain you want to create the certificate for.
+ * Once you have a private key certificate, whether it’s a free one or one that you imported from elsewhere, then you can bind TLS/SSL to your domain.
+ * Other than specifying the custom domain and the certificate, you need to tell it whether to use SNI SSL or IP SSL. SNI SSL binds the certificate using the website’s hostname, while IP SSL binds the certificate to the website’s IP address. SNI SSL gives you more flexibility, and it’s easier to configure, so it’s usually the best choice ,The only disadvantage is that it doesn’t work on really old browsers.
+ * Once you’ve bound your certificate to your custom domain, people will be able to access your app using HTTPS.
+ * However, they’ll still be able to access it using HTTP, which is not encrypted, so if you want to ensure that everyone will access your site over HTTPS, then we can select the “HTTPS only” option in your app’s TLS/SSL settings.
+ * one of the benefits of binding a certificate to a custom domain is that it lets a client device know that it’s communicating with a legitimate website and not a hacker. But the website has no way of knowing that’s it’s communicating with a legitimate client and not a hacker. If you require that level of security, then you can enable TLS mutual authentication. This is also known as client certificate authentication. 
 
 
    
