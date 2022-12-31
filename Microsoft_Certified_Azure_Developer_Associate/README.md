@@ -511,7 +511,24 @@ vii. Azure Blueprints
  * inbound (for connecting to an app) 
  *  outbound (for connecting from an app to other resources).
 
-* Inbound Connection
+ * Inbound Connection :-
+  * you want to restrict which IP addresses can connect to it, then the easiest way to do that is to add access restriction rules to your app. Each rule either allows or denies access to a single IP address or a block of IP addresses.
+  * If you have resources in an Azure virtual network that need to connect to your app over the Microsoft backbone network rather than over the internet, then you can restrict access to your app using a service endpoint rather than an IP address. 
+  * A service endpoint is something you can enable on a subnet. So you can create a service-endpoint-based rule that allows access to your app from a particular subnet in a VNet.
+  * A newer way of doing this is to create a private endpoint for your app. This is a private IP address in your VNet that gets attached to your app.
+  *  One advantage of using a private endpoint is that it makes it easy to connect to your app from an on-premises environment. If you already have a connection from your on-premises environment to your Azure VNet using a method such as Azure ExpressRoute or Azure VPN,then you can connect to the app through the private endpoint in the VNet. 
+  * This is more difficult to do with a service endpoint. For this and other reasons, Microsoft recommends using private endpoints rather than service endpoints.
+
+  * Outbound Connections:-
+  *  An outbound connection is typically used to connect an app to a database or other type of supporting resource.
+  * App Service Hybrid Connections is a feature that allows an app to connect to a resource in an Azure virtual network or an on-premises environment. To make it work, you need to install Hybrid Connection Manager on a Windows Server that has access to both networks over port 443. App Service then uses this as a relay to connect to the other environment.
+ * The advantage of using Hybrid Connections is that it provides secure access even if you don’t have an ExpressRoute or VPN connection between your on-premises environment and Azure.
+ * Another method is called VNet Integration. There are two different types: Regional VNet Integration and Gateway-required VNet Integration.
+ * The great thing about the Regional method is that you don’t need to install anything.
+ * To configure it in App Service, we can go into the Networking section of your app’s configuration and select VNet Integration. Then we just need to tell it which VNet we want to add. If the VNet that you want to integrate with is in the same region as the app, then the only requirement is that the VNet has to have an empty subnet that the Integration feature can use.
+ * Once we’ve configured Regional VNet Integration, then your app can connect to resources in the VNet or in an on-premises network that’s connected to the VNet through ExpressRoute or a VPN. It can even connect to a VNet in a different region if there’s a peering connection between that VNet and the regional VNet.
+ 
+
 
    
 
