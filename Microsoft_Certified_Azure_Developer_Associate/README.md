@@ -503,6 +503,15 @@ vii. Azure Blueprints
  * However, they’ll still be able to access it using HTTP, which is not encrypted, so if you want to ensure that everyone will access your site over HTTPS, then we can select the “HTTPS only” option in your app’s TLS/SSL settings.
  * one of the benefits of binding a certificate to a custom domain is that it lets a client device know that it’s communicating with a legitimate website and not a hacker. But the website has no way of knowing that’s it’s communicating with a legitimate client and not a hacker. If you require that level of security, then you can enable TLS mutual authentication. This is also known as client certificate authentication. 
 
+ ## DAY:-13
+
+ # Inbound and Outbound Connections
+
+ There are many different ways to connect to or from an app, depending on exactly what you need to do. These methods can be divided into two groups: 
+ * inbound (for connecting to an app) 
+ *  outbound (for connecting from an app to other resources).
+
+* Inbound Connection
 
    
 
