@@ -546,6 +546,14 @@ vii. Azure Blueprints
     *  we’ll create the container registry. In the Azure Portal, type “container” in the search bar, and choose “Container registries”. Then click “Create”. 
     * When it’s done, click “Go to resource”. Then go to “Access keys” and set “Admin user” to “Enabled”. This is required for deploying to App Service.
  * step 2 descrp- 
+    * we need to build the container image, so we need to have Docker installed and running on your desktop.
+    * Once you have Docker running, you can build the container image in a variety of different ways, but we’re going to do it from Visual Studio Code,You’ll also need to install the Azure Tools extension. To install it, click on Extensions, search for “azure”, and install Azure Tools. 
+ * we need to create a Dockerfile, which is a file that tells Docker how to build a specific container. we’d need to type some instructions that tell Docker what base image to use and how to install our application and all of its dependencies.
+ * Build the container image.
+ * Now we’re going to push the image to the container registry. Click the Docker logo. The image name shows up here. If you click on it, the “latest” tag appears, which means this is the version of the image that we just built. Now, right-click on the image and select “Push”. It brings up the image name and tag again up here, so hit “Enter”.
+ *  To check that it worked, click the Refresh button next to “Registries”, and the image name should show up under your registry. If you click on it, the tagged version of the image is there.
+ * container image is in our registry, we can finally deploy it to Azure App Service. Right-click the tagged image, and select “Deploy image to Azure App Service”. 
+ * Finally, select an App Service Plan. If you haven’t created one already, then you can create one from here. The pricing tier for your service plan has to be at least Basic because you can’t deploy a container to a Free plan.
 
 
 
