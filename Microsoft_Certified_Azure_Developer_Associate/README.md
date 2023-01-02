@@ -527,6 +527,29 @@ vii. Azure Blueprints
  * The great thing about the Regional method is that you don’t need to install anything.
  * To configure it in App Service, we can go into the Networking section of your app’s configuration and select VNet Integration. Then we just need to tell it which VNet we want to add. If the VNet that you want to integrate with is in the same region as the app, then the only requirement is that the VNet has to have an empty subnet that the Integration feature can use.
  * Once we’ve configured Regional VNet Integration, then your app can connect to resources in the VNet or in an on-premises network that’s connected to the VNet through ExpressRoute or a VPN. It can even connect to a VNet in a different region if there’s a peering connection between that VNet and the regional VNet.
+
+ ## DAY:- 14
+
+ # Running a Container on Azure App Service
+
+ * demonstration of how to build and run a Docker container on App Service-
+
+ * A Docker container is a self-contained software environment that includes an application and all of its dependencies. Because it includes everything it needs, the container is portable. That is, it can run on any system that supports Docker without having to worry about what’s installed in the underlying operating system.
+
+ * Container images are normally stored in a central location, which makes it easier to manage them and deploy them. Microsoft offers a service called Azure Container Registry that provides this central location.
+
+ * To deploy a container to App Service-
+    * create an instance of Azure Container Registry. Then build a container image. 
+    * upload it to your container registry. Then deploy it from the container registry to Azure App Service. 
+    * try to connect to the application to make sure it worked
+ * step 1 descrp-
+    *  we’ll create the container registry. In the Azure Portal, type “container” in the search bar, and choose “Container registries”. Then click “Create”. 
+    * When it’s done, click “Go to resource”. Then go to “Access keys” and set “Admin user” to “Enabled”. This is required for deploying to App Service.
+ * step 2 descrp- 
+
+
+
+
  
 
 
