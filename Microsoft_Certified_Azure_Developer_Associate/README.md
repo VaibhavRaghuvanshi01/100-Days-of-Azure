@@ -555,6 +555,17 @@ vii. Azure Blueprints
  * container image is in our registry, we can finally deploy it to Azure App Service. Right-click the tagged image, and select “Deploy image to Azure App Service”. 
  * Finally, select an App Service Plan. If you haven’t created one already, then you can create one from here. The pricing tier for your service plan has to be at least Basic because you can’t deploy a container to a Free plan.
 
+ ## DAY :- 15
+
+ # Building Containers with Azure DevOps
+
+ * Docker Containers
+     * As a software containerization platform, Docker offers developers a common toolset and packaging model. It also provides a deployment mechanism for containerized apps. This results in simplified management, regardless of the host, as well as a seamless DevOps experience.
+     * Docker images can be created and deployed identically across virtually any environment in seconds. The Docker ecosystem is huge. 
+     *  DockerHub, which is the Docker-maintained public containerized application registry, publishes almost 200,000 applications in the public community repository. 
+
+
+
 
 
 
