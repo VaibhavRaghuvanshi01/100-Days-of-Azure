@@ -564,6 +564,10 @@ vii. Azure Blueprints
      * Docker images can be created and deployed identically across virtually any environment in seconds. The Docker ecosystem is huge. 
      *  DockerHub, which is the Docker-maintained public containerized application registry, publishes almost 200,000 applications in the public community repository. 
 
+ * Microservices and Containers-
+ * The term “Microservices” refers to an application development strategy where each part of an application is actually deployed as a completely self-contained component (or microservice). The microservices that comprise an application can then be individually scaled and updated. 
+
+ 
 
 
 
