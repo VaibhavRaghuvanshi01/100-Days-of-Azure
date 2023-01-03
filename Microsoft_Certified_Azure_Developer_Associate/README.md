@@ -567,6 +567,11 @@ vii. Azure Blueprints
  * Microservices and Containers-
  * The term “Microservices” refers to an application development strategy where each part of an application is actually deployed as a completely self-contained component (or microservice). The microservices that comprise an application can then be individually scaled and updated. 
 
+ * While you might operate a development or testing environment on a single server or by using a single instance of each microservice, production is typically a different story. In such an environment, you are likely going to want to be able to scale things out. 
+
+ *  You’ll probably want to scale out to multiple instances across a cluster of servers, rather than running things on one server. You’ll want the ability to scale in as well. You may also want different teams within your development department to be able to independently work on, and update, different microservices that each team is responsible for.
+ * By leveraging the benefits of Docker containers when working with more complex microservice-based applications, organizations can become more agile, because those microservices can be quickly scaled out and in to meet the loads on the application.
+ * While doing so, however, the isolation of resources and namespaces offered by containers ensures that one microservice instance does not interfere with any other instances. This makes it easier to design a solid microservice architecture, which, in turn, allows organizations to deal with the management, deployment, orchestration, and patching needs of container-based services – while limiting the risks to availability.
  
 
 
