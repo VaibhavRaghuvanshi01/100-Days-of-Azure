@@ -587,6 +587,11 @@ vii. Azure Blueprints
  * Azure Container Registry-
     * The Azure Container Registry is another container-centric service offering available in Azure. It allows you to store and manage your container images in a central registry, which is integrated with several other Azure services, including the App Service, Batch, and Service Fabric, among others. 
     * Azure Container Registry supports many types of container deployments, including DC/OS, Docker Swarm, and Kubernetes. Because of the broad support that Azure Container Registry offers, you can manage the configuration of your applications without being locked into the configuration of the target hosting environment. 
+ * Azure Service Fabric-
+    * Azure Service Fabric is a distributed systems platform that allows you to build and operate always-on, scalable, distributed apps. The service makes it easier to package, deploy, and manage scalable and reliable microservices and containers.
+    * It can also host and orchestrate containers.
+    * By leveraging Azure Service Fabric, you can avoid infrastructure problems and focus solely on the deployment of mission-critical workloads that are not only reliable, but also scalable. 
+
  
 
 
