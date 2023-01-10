@@ -591,7 +591,9 @@ vii. Azure Blueprints
     * Azure Service Fabric is a distributed systems platform that allows you to build and operate always-on, scalable, distributed apps. The service makes it easier to package, deploy, and manage scalable and reliable microservices and containers.
     * It can also host and orchestrate containers.
     * By leveraging Azure Service Fabric, you can avoid infrastructure problems and focus solely on the deployment of mission-critical workloads that are not only reliable, but also scalable. 
-
+ * Azure Web Apps -
+     * Azure Web Apps is an Azure offering that provides you with a managed service for both Windows-based and Linux-based web applications.
+     * This service allows you to deploy and run containerized apps for both platforms and it also offers auto-scaling and load balancing options. You can even integrate with Azure DevOps.
  
 
 
