@@ -572,6 +572,19 @@ vii. Azure Blueprints
  *  You’ll probably want to scale out to multiple instances across a cluster of servers, rather than running things on one server. You’ll want the ability to scale in as well. You may also want different teams within your development department to be able to independently work on, and update, different microservices that each team is responsible for.
  * By leveraging the benefits of Docker containers when working with more complex microservice-based applications, organizations can become more agile, because those microservices can be quickly scaled out and in to meet the loads on the application.
  * While doing so, however, the isolation of resources and namespaces offered by containers ensures that one microservice instance does not interfere with any other instances. This makes it easier to design a solid microservice architecture, which, in turn, allows organizations to deal with the management, deployment, orchestration, and patching needs of container-based services – while limiting the risks to availability.
+
+ ## DAY:-16
+
+ # Container-Related Services in Azure
+
+ * Azure Container Instances-
+    * When you run workloads in Azure Container Instances, you can focus on app development and deployment instead of the deployment and management of the underlying infrastructure that’s necessary to run those apps.
+    * While Azure Container Instances are easy to deploy, the main advantage of using them is the security that the hypervisor isolation that they provide for each container group. With this type of isolation available, you can be sure that your organization’s containers aren’t sharing their OS kernel with other containers.
+ * Azure Kubernetes Service-
+    * The Azure Kubernetes Service started out as Azure Container Services, or ACS.
+    *  It originally supported Docker Swarm and Mesos/Mesosphere DC/OS for orchestration management. However, when Kubernetes support was added, it became so popular that Microsoft eventually renamed the Azure Container Service to the Azure Kubernetes Service, or AKS.
+    * At this point, Kubernetes is really the standard for container orchestration. Using the Azure Kubernetes Service, you can not only deploy and manage Kubernetes, but you can also scale and run your applications in a secure environment.
+ * 
  
 
 
