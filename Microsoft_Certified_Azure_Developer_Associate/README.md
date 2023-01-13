@@ -645,7 +645,9 @@ vii. Azure Blueprints
   is being created by docker build. This part of the 
    Dockerfile is typically used to configure things within 
    the image. 
- * 
+ * The last line in our sample file calls a command that we 
+  want to execute once the new container is created from the 
+   image.
   
 
  
