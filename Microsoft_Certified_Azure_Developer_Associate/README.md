@@ -648,6 +648,22 @@ vii. Azure Blueprints
  * The last line in our sample file calls a command that we 
   want to execute once the new container is created from the 
    image.
+
+ ## DAY:- 18
+
+ # Multi-Stage Builds
+ *  Multi-stage builds are a new feature that makes life 
+   easier when working with Dockerfiles. They are extremely 
+   helpful when trying to optimize Dockerfiles while ensuring 
+   that they are still easy to read.
+ * This Dockerfile would contain everything that we need to 
+  build the application that you wished to deploy. You’d also 
+  have a second, slimmed-down Dockerfile that you would use 
+  for production. This second file would contain just the 
+  application and only the resources needed to run it. This 
+  “builder pattern” of maintaining two Dockerfiles, 
+   obviously, isn’t ideal. 
+ * 
   
 
  
