@@ -608,7 +608,6 @@ vii. Azure Blueprints
       can even integrate with Azure DevOps.
 
    ## DAY:-17
-
    # Anatomy of a Dockerfile
 
    * Dockerfiles are used by docker build to assemble images. 
